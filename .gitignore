@@ -1,0 +1,4 @@
+.env
+node_modules/
+# Remove .DS_Store from this and all nested directories.
+**/.DS_Store
