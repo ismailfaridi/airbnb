@@ -25,7 +25,7 @@ module.exports.validateReview = (req, res, next) => {
 }
 
 module.exports.isLoggedIn = (req, res, next) => {
-  // console.log(req.user); // show loged0in user details
+  // console.log(req.user); // show loged-in user details
   // console.log(req); // print more details
   // console.log(req.path, " .. ", req.originalUrl);
 

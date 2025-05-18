@@ -69,13 +69,6 @@ passport.use(new LocalStrategy(User.authenticate())); // use static authenticate
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-// app.get("/demouser", async (req, res) => {
-//   const demoUser = new User({email: "ismail@gmail.com", username: "ismail"});
-//   const regUser = await User.register(demoUser, "mypassword");
-//   res.send(regUser);
-// });
-
-
 // Connect Flash (success & eror messages)
 app.use(flash());
 
@@ -89,7 +82,6 @@ app.use((req, res, next) => {
   next();
 });
 
-// ROUTES
 app.get("/", (req, res) => {
   res.redirect("/listings");
 });
